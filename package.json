@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+  "build": "npm run build:css",
   "build:css": "npx @tailwindcss/cli -i ./wwwroot/css/input.css -o ./wwwroot/css/app.css",
   "watch:css": "npx @tailwindcss/cli -i ./wwwroot/css/input.css -o ./wwwroot/css/app.css --watch"
 },
