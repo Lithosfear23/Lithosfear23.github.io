@@ -1,15 +1,29 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Renz Malabanan</PageTitle>
+
+<!--
+
+    DEFAULT STYLING
+
+    FONT-HERO text-5xl sm:text-6xl md:text-7xl uppercase
+    FONT-HEADING text-center md:text-start text-blue-400 tracking-[0.3em]
+    FONT-BODY text-center md:text-start text-lg leading-6 text-slate-300
+    PRIMARY BUTTON  bg-blue-500 hover:bg-blue-400 hover:shadow-lg hover:-translate-y-1 text-white 
+                    py-3 px-5 rounded-md font-body transition-all duration-200
+    SECONDARY BUTTON  border border-blue-400 text-blue-400 hover:text-white hover:shadow-lg hover:border-white hover:-translate-y-1
+                      py-3 px-3 rounded-md transition-all duration-200
+
+-->
 
 <!-- HOME SECTION -->
 <section 
     id="home"
-         class="min-h-screen flex flex-col md:flex-row justify-center items-center gap-12 pt-16 outline outline-4 outline-red-500">
+    class="min-h-screen flex flex-col md:flex-row justify-center items-center gap-12 pt-8">
 
     <div class="mx-auto w-full md:ps-20 max-w-7xl space-y-3">
         
-        <p class="font-heading text-center md:text-start text-blue-400 tracking-[0.3em]"> > Loading player 016...</p>
+        <p class="font-heading text-sm text-center md:text-start text-blue-400 tracking-[0.3em]"> > Loading player 016...</p>
 
         <div class="text-center md:text-start">
             <h1 class="inline-block font-hero text-5xl sm:text-6xl md:text-7xl uppercase">Renz Malabanan</h1>
@@ -33,7 +47,7 @@
             </a>
 
             <a 
-                href="/practicum/Resume_Malabanan.pdf"
+                href="/practicum/Resume - Malabanan_Renz_Bryle_M.pdf"
                 target="_blank"
                class="border border-blue-400 text-blue-400 hover:text-white hover:shadow-lg hover:border-white hover:-translate-y-1
                 py-3 px-3 rounded-md transition-all duration-200">
@@ -55,7 +69,75 @@
 </section>
 
 <!-- ABOUT SECTION -->
-<section id="about">
+<section 
+    id="about"
+    class="min-h-screen flex flex-col md:flex-row justify-center items-center py-16">
+
+    <div class="w-full max-w-7xl space-y-8">
+
+        <p class="font-heading text-sm text-center md:text-start text-blue-400 tracking-[0.3em]"> > Character Sheet</p>
+        
+        <div class="text-center">
+        
+            <h1 class="inline-block font-heading text-5xl sm:text-6xl md:text-7xl uppercase">About</h1>
+
+        </div>
+
+        <div class="max-w-3xl mx-auto text-center font-body text-slate-300 text-lg space-y-3 leading-6">
+
+            <div>
+                I am a fourth-year Information Technology student specializing in the Internet of Things (IoT),
+                with a passion for building modern web applications and connected systems.
+            </div>
+            <div>
+                I enjoy exploring game mechanics, understanding how systems work under the hood,
+                and developing applications that combine functionality with an intuitive user experience.
+            </div>
+
+            <div class="font-heading text-sm text-center text-blue-400 tracking-[0.3em] pt-8">
+                > Skills Unlocked:
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+
+                <div class="bg-blue-500 hover:bg-blue-400 hover:shadow-lg hover:-translate-y-1 text-white flex items-center justify-center
+                    w-26 h-8 text-center rounded-md font-body transition-all duration-200">
+                    C#
+                </div>
+                <div class="bg-blue-500 hover:bg-blue-400 hover:shadow-lg hover:-translate-y-1 text-white flex items-center justify-center
+                    w-26 h-8 text-center rounded-md font-body transition-all duration-200">
+                    Kotlin
+                </div>
+                <div class="bg-blue-500  hover:bg-blue-400 hover:shadow-lg hover:-translate-y-1 text-white flex items-center justify-center
+                    w-26 h-8 text-center rounded-md font-body transition-all duration-200">
+                    PHP
+                </div>
+                <div class="bg-blue-500 hover:bg-blue-400 hover:shadow-lg hover:-translate-y-1 text-white flex items-center justify-center
+                    w-26 h-8 text-center rounded-md font-body transition-all duration-200">
+                    Tailwind
+                </div>
+                <div class="bg-blue-500 hover:bg-blue-400 hover:shadow-lg hover:-translate-y-1 text-white flex items-center justify-center
+                    w-26 h-8 text-center rounded-md font-body transition-all duration-200">
+                    SQL
+                </div>
+                <div class="bg-blue-500 hover:bg-blue-400 hover:shadow-lg hover:-translate-y-1 text-white flex items-center justify-center
+                    w-26 h-8 text-center rounded-md font-body transition-all duration-200">
+                    .NET Blazor
+                </div>
+                <div class="bg-blue-500 hover:bg-blue-400 hover:shadow-lg hover:-translate-y-1 text-white flex items-center justify-center
+                    w-26 h-8 text-center rounded-md font-body transition-all duration-200">
+                    RESTful API
+                </div>
+                <div class="bg-blue-500 hover:bg-blue-400 hover:shadow-lg hover:-translate-y-1 text-white flex items-center justify-center
+                    w-26 h-8 text-center rounded-md font-body transition-all duration-200">
+                    IoT
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- PROJECTS SECTION -->
