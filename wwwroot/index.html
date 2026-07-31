@@ -48,7 +48,7 @@
             <div class="tip delay7">
                 Tip:
                 <br>
-                "Every project taught me something new."
+                <div id="tiptext"></div>
             </div>
         </div>
 
@@ -69,6 +69,23 @@
         let started = false;
 
         const loader = document.querySelector(".portfolio-loader");
+
+        const tip = document.getElementById("tiptext");
+
+        const tips = [
+            "Every project teaches me something new.",
+            "Experience is earned one project at a time.",
+            "Clean code is written for people first, computers second.",
+            "Every bug defeated grants bonus experience.",
+            "Progress is made one commit at a time.",
+            "Achievement Unlocked: Continuous Learning.",
+            "Started with Python. Now building full-stack applications.",
+            "Side quests often teach the best lessons.",
+            "Learning never stops in software development.",
+            "The next level starts outside your comfort zone."
+        ];
+
+        tip.textContent = tips[Math.floor(Math.random() * tips.length)];
 
         lastStep.addEventListener("animationend", async () => {
 
