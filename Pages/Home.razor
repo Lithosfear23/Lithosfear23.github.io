@@ -853,10 +853,6 @@
                 : "opacity-0 scale-95")"
             @onclick:stopPropagation>
 
-            TEST
-            @mediaCount
-            @maxAvailableMedia
-
             <button class="flex justify-end text-slate-300"
                     @onclick="() => ToggleGalleryView(false)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1159,6 +1155,44 @@
                 },
                 Credits = """"
                 Background music and selected audio/image assets belong to their respective creators. The boxer sprites, animations, logo, and several in-game visual assets were designed and created by our team.
+                """",
+            },
+            new ProjectsModel
+            {
+                Date = DateTime.TryParseExact("03-24", "MM-yy", CultureInfo.InvariantCulture, DateTimeStyles.None,
+                out date) ? date : DateTime.Today,
+                ProjectName = "Ticketing Bros",
+                ProjectStatus = "Complete",
+                TechStack = new List<string>
+                {
+                    "C#", "ASP .NET Framework 4.8", "ASP .NET Web Forms", "MariaDB", "HeidiSQL"
+                },
+                Medias = new List<ProjectMedia>
+                {
+                    new (key: 0, source: "/projects/year-2/ticketingbros/ticketingbros-software-demo.mp4", type: FileTypes.MP4, isVideo: true),
+                    new (key: 1, source: "/projects/year-2/ticketingbros/ticketingbros-thumb-1.png", type: FileTypes.PNG),
+                    new (key: 2, source: "/projects/year-2/ticketingbros/ticketingbros-thumb-2.png", type: FileTypes.PNG),
+                    new (key: 3, source: "/projects/year-2/ticketingbros/ticketingbros-thumb-3.png", type: FileTypes.PNG),
+                    new (key: 4, source: "/projects/year-2/ticketingbros/ticketingbros-thumb-4.png", type: FileTypes.PNG),
+                    new (key: 6, source: "/projects/year-2/ticketingbros/ticketingbros-thumb-6.png", type: FileTypes.PNG),
+                    new (key: 7, source: "/projects/year-2/ticketingbros/ticketingbros-thumb-7.png", type: FileTypes.PNG),
+                    new (key: 8, source: "/projects/year-2/ticketingbros/ticketingbros-thumb-8.png", type: FileTypes.PNG),
+                    new (key: 9, source: "/projects/year-2/ticketingbros/ticketingbros-thumb-9.png", type: FileTypes.PNG),
+                    new (key: 10, source: "/projects/year-2/ticketingbros/ticketingbros-video-thumb.png", type: FileTypes.PNG, isVideo: true),
+                },
+                Description = """"
+                A web-based movie ticket booking system developed in C# using ASP.NET Web Forms and .NET Framework 4.8. Built as a university project, it simulates a modern cinema booking platform while strengthening my understanding of server-side web development, relational database design, and full-stack application development.
+                """",
+
+                FeaturesParagraph = new List<string>
+                {
+                    """"
+                    The system allows users to browse now showing and upcoming movies, view detailed movie information, select cinemas and showtimes, reserve seats through an interactive seating layout, and receive booking confirmations via email. It also integrates IMDb ratings and uses a secure MariaDB database to manage movies, bookings, schedules, and user information.
+                    """"
+                },
+
+                Credits = """"
+                Movie information, ratings, and media assets belong to their respective creators. This project was developed solely for educational purposes.
                 """",
             }
         };
