@@ -75,12 +75,11 @@
             if (started) return;
             started = true;
 
-            await new Promise(resolve => setTimeout(resolve, 600));
-
-            await Blazor.start();
+            await new Promise(resolve => setTimeout(resolve, 1000));
 
             loader.classList.add("fade-out");
 
+            await Blazor.start();
         });
 
     </script>
