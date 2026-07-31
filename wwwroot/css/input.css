@@ -69,23 +69,23 @@ body {
 }
 
 .delay3 {
-    animation-delay: 1.4s;
-}
-
-.delay4 {
     animation-delay: 1.9s;
 }
 
-.delay5 {
+.delay4 {
     animation-delay: 2.4s;
 }
 
-.delay6 {
+.delay5 {
     animation-delay: 2.9s;
 }
 
-.delay7 {
+.delay6 {
     animation-delay: 3.6s;
+}
+
+.delay7 {
+    animation-delay: 4.4s;
 }
 
 .cursor {
