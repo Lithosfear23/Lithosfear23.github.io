@@ -18,11 +18,11 @@
     <div id="app">
         <div class="portfolio-loader flex flex-col">
             <div class="title">
-                Loading Portfolio...
+                Loading Portfolio<span class="cursor">█</span>
             </div>
 
             <div class="step delay1">
-                ▶ Preparing Main Quest...
+                ▶ Preparing Hero <span class="spinner"></span>
             </div>
 
             <div class="step delay2">
@@ -59,7 +59,32 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+
+    <script>
+
+        const lastStep = document.querySelector(".delay7");
+
+        let started = false;
+
+        const loader = document.querySelector(".portfolio-loader");
+
+        lastStep.addEventListener("animationend", async () => {
+
+            if (started) return;
+            started = true;
+
+            await new Promise(resolve => setTimeout(resolve, 600));
+
+            await Blazor.start();
+
+            loader.classList.add("fade-out");
+
+        });
+
+    </script>
+
 </body>
 
 </html>
