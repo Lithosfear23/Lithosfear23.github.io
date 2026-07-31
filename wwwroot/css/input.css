@@ -61,31 +61,32 @@ body {
 }
 
 .delay1 {
-    animation-delay: .4s;
+    animation-delay: 1s;
 }
 
+/* Let "Preparing Hero..." stay on screen for a while */
 .delay2 {
-    animation-delay: .9s;
+    animation-delay: 2.3s;
 }
 
 .delay3 {
-    animation-delay: 1.9s;
+    animation-delay: 2.7s;
 }
 
 .delay4 {
-    animation-delay: 2.4s;
+    animation-delay: 3.1s;
 }
 
 .delay5 {
-    animation-delay: 2.9s;
+    animation-delay: 3.5s;
 }
 
 .delay6 {
-    animation-delay: 3.6s;
+    animation-delay: 3.9s;
 }
 
 .delay7 {
-    animation-delay: 4.4s;
+    animation-delay: 4.6s;
 }
 
 .cursor {
